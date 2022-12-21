@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Código QR con Javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light shadow" style="background-color: #bccece;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h2><b>Generador QR</b></h2>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container pt-5">
+        <div class="row justify-content-around">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="https://i.pinimg.com/736x/bb/55/b1/bb55b1a42f4e2cf6e80a0e275ad8b0c8.jpg" width="100%">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-4">
+
+                <form action="" id="formulario" class="formulario">
+                    <input type="text" id="link" placeholder="Escribe el texto o URL" onchange="activateBtn()" />
+                    <button class="btn" id="btn">Generar QR</button>
+                </form>
+
+                <div id="contenedorQR" class="contenedorQR" download></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
